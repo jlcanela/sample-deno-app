@@ -26,7 +26,8 @@ jobs:
           image: ${{ env.IMAGE_NAME }}
           tags: latest ${{ github.sha }}
           containerfiles: |
-            ./Dockerfile
+            ./infra/docker/Dockerfile
+          context: .
 
       - name: Push To Registry
         uses: redhat-actions/push-to-registry@v2

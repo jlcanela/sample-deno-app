@@ -11,7 +11,7 @@ param databaseUrl string
 param registryUsername string = 'jlcanela'
 @secure()
 param registryPassword string
-param imageUrl string = 'ghcr.io/jlcanela/deno-azure-webapp-sample:latest'
+param imageUrl string = 'ghcr.io/jlcanela/sample-deno-app:latest'
 
 
 module containerAppEnv 'modules/containerAppEnv.bicep' = {
